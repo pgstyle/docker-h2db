@@ -61,7 +61,7 @@ echo -e "\e[1;32mshutdown signal trap set up successfully, proceed\e[0m";
 
 # Construct H2 Server arguments
 echo ": constructing java arguments";
-farg="-ifExists -trace -baseDir \"${H2_DATADIR}\"";
+farg="-ifExists -trace";
 echo ": append fixed arguments: ${farg}";
 cmd="java -cp /opt/h2/bin/h2*.jar org.h2.tools.Server ${farg}";
 echo ": append arguments for server modes";
