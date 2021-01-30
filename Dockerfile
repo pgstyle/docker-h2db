@@ -1,5 +1,5 @@
 # PGStyle H2DB Dockerfile
-ARG OPENJDK_VERSION=8-jre-alpine
+ARG OPENJDK_VERSION=8-jre
 FROM openjdk:${OPENJDK_VERSION}
 
 LABEL maintainer="PGKan <pgkan@pgstyle.org>"
