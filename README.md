@@ -8,6 +8,12 @@ This is yet another **unofficial** Docker image of H2DB server. While there are 
 - This image supports TCP and Web password.
 - And the **most important one** (we think), this image can handle `docker stop` signal and shut down the TCP server gracefully.
 
+## Change history
+- **0.9.13**  
+bug fix: copy file missed /opt/h2/tools/h2shell
+- **0.9.12**  
+initially pushed to Docker Hub
+
 ## Image variants
 based on [openjdk:8-jre](https://hub.docker.com/_/openjdk): `pgstyle/h2db-latest`, `pgstyle/h2db-0.9.12`  
 based on [openjdk:8-jre-alpine](https://hub.docker.com/_/openjdk): `pgstyle/h2db-alpine`, `pgstyle/h2db-0.9.12-alpine`

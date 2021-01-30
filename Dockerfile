@@ -28,10 +28,10 @@ ENV H2_DATADIR=${H2_DATADIR}   \
     PATH=${PATH}:/opt/h2/tools
 
 # Copy files 
-COPY copy-file/* /
+COPY copy-file/ /
 
 # Define default command
 ENTRYPOINT [ "/docker-entrypoint.sh" ]
 
 # Seal of verson
-ENV IMAGE_VERSION=0.9.12
+ENV IMAGE_VERSION=0.9.13
