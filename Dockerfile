@@ -17,8 +17,6 @@ rm docs/ src/ service/ build.* -r
 
 # Setup network and H2 server parameters
 WORKDIR /opt/h2-data
-ARG H2_TCPPORT=9092
-ARG H2_WEBPORT=80
 EXPOSE 5435/tcp 8082/tcp 9092/tcp
 ENV H2_DATADIR=${H2_DATADIR}   \
     H2_MODE=TCP|WEB|PG         \
@@ -34,4 +32,4 @@ COPY copy-file/ /
 ENTRYPOINT [ "/docker-entrypoint.sh" ]
 
 # Seal of verson
-ENV IMAGE_VERSION=0.9.13
+ENV IMAGE_VERSION=0.9.14
