@@ -9,6 +9,8 @@ This is yet another **unofficial** Docker image of H2DB server. While there are 
 - And the **most important one** (we think), this image can handle `docker stop` signal and shut down the TCP server gracefully.
 
 ## Change history
+- **0.9.14**  
+bug fix: web port forced to be 80
 - **0.9.13**  
 bug fix: copy file missed /opt/h2/tools/h2shell
 - **0.9.12**  
